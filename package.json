@@ -1,0 +1,81 @@
+{
+  "name": "azsearch.js",
+  "version": "0.0.21",
+  "description": "Automagical UI and react components for Azure Search using AzSearchStore",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/EvanBoyle/AzSearch.js.git"
+  },
+  "main": "dist/AzSearch.bundle.js",
+  "module": "dist/AzSearch.js",
+  "typings": "dist/AzSearch.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "lint": "tslint -c tslint.json 'src/**/*.{ts,tsx}'",
+    "start_server": "http-server",
+    "tscompile": "tsc",
+    "devbuild": "npm run compile && npm run devpack",
+    "devpack": "webpack -d",
+    "prodpack": "webpack -p && copy AzSearch.css dist\\",
+    "compile": "npm run lint && npm run tscompile",
+    "pretest": "npm run lint",
+    "test": "jest",
+    "test-watch": "jest --watch"
+  },
+  "author": "Evan Boyle (https://github.com/EvanBoyle)",
+  "license": "MIT",
+  "dependencies": {
+    "azsearchstore": "^0.0.27",
+    "hogan.js": "3.0.2",
+    "numeral": "^2.0.6",
+    "object-assign": "^4.1.1",
+    "rc-slider": "6.1.2",
+    "react-addons-test-utils": "^15.5.1",
+    "react-autosuggest": "9.0.0",
+    "react-redux": "^5.0.3",
+    "react-spinkit": "^2.1.2"
+  },
+  "devDependencies": {
+    "@types/enzyme": "^2.8.0",
+    "@types/jest": "^19.2.3",
+    "@types/numeral": "0.0.20",
+    "@types/object-assign": "^4.0.30",
+    "@types/rc-slider": "6.1.2",
+    "@types/react-autosuggest": "^8.0.0",
+    "@types/react-dom": "15.5.0",
+    "@types/react-redux": "^4.4.37",
+    "@types/react-spinkit": "^1.1.31",
+    "awesome-typescript-loader": "^3.1.2",
+    "css-loader": "^0.28.0",
+    "enzyme": "^2.8.2",
+    "jest": "^20.0.3",
+    "react": "15.5.4",
+    "react-dom": "^15.5.4",
+    "react-test-render": "^1.0.3",
+    "style-loader": "^0.16.1",
+    "ts-jest": "^19.0.14",
+    "ts-lint": "4.5.1",
+    "typescript": "^2.2.2",
+    "webpack": "^2.2.3"
+  },
+  "peerDependencies": {
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "redux": "^3.6.0"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ],
+    "transform": {
+      "\\.(ts|tsx)$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "testRegex": "/__tests__/.*\\.(ts|tsx|js)$",
+    "testResultsProcessor": "<rootDir>/node_modules/ts-jest/coverageprocessor.js",
+    "collectCoverage": true
+  }
+}

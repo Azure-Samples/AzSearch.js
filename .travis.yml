@@ -1,0 +1,10 @@
+language: node_js
+node_js:
+  - "node"
+script:
+  - yarn run devbuild
+  - yarn run test 
+cache:
+  yarn: true
+  directories:
+    - node_modules
