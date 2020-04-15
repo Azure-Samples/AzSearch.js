@@ -1,8 +1,6 @@
 # AzSearch.js
 Automagical UI and sample react controls for [Azure Search](https://docs.microsoft.com/en-us/azure/search/) using [AzSearchStore](https://github.com/Azure-Samples/AzSearchStore). Written in [TypeScript](https://www.typescriptlang.org/).
 
-[![Build Status](https://travis-ci.org/Azure-Samples/AzSearch.js.svg?branch=master)](https://travis-ci.org/Azure-Samples/AzSearch.js)
-
 ## Live Demo
 * [Real estate demo](https://azsearchstore.azurewebsites.net/realestate.html) | [source](https://github.com/Azure-Samples/AzSearch.js/blob/master/realestate.html)
 
