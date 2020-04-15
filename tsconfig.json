@@ -1,5 +1,4 @@
 {
-    "version": "2.2.2",
     "compilerOptions": {
         "declaration": true,
         "outDir": "./dist/",
@@ -11,5 +10,8 @@
     },
     "include": [
         "./src/AzSearch.tsx"
+    ],
+    "exclude": [
+        "node_modules"
     ]
 }

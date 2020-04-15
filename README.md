@@ -1,13 +1,13 @@
 # AzSearch.js
-Automagical UI and sample react controls for [Azure Search](https://docs.microsoft.com/en-us/azure/search/) using [AzSearchStore](https://github.com/EvanBoyle/AzSearchStore). Written in [TypeScript](https://www.typescriptlang.org/).
+Automagical UI and sample react controls for [Azure Search](https://docs.microsoft.com/en-us/azure/search/) using [AzSearchStore](https://github.com/Azure-Samples/AzSearchStore). Written in [TypeScript](https://www.typescriptlang.org/).
 
-[![Build Status](https://travis-ci.org/EvanBoyle/AzSearch.js.svg?branch=master)](https://travis-ci.org/EvanBoyle/AzSearch.js)
+[![Build Status](https://travis-ci.org/Azure-Samples/AzSearch.js.svg?branch=master)](https://travis-ci.org/Azure-Samples/AzSearch.js)
 
 ## Live Demo
-* [Real estate demo](https://azsearchstore.azurewebsites.net/realestate.html) | [source](https://github.com/EvanBoyle/AzSearch.js/blob/master/realestate.html)
+* [Real estate demo](https://azsearchstore.azurewebsites.net/realestate.html) | [source](https://github.com/Azure-Samples/AzSearch.js/blob/master/realestate.html)
 
 ## Get started developing an AzSearch.js app in Typescript
-* [Sample TypeScript project](https://github.com/EvanBoyle/AzSearch.jsTypeScriptStarter): clone, customize, and go.
+* [Sample TypeScript project](https://github.com/Azure-Samples/AzSearch.jsTypeScriptStarter): clone, customize, and go.
 
 ## App Generator
 The following link contains a tool to help generate starting sample app that you can further customeize:
@@ -25,25 +25,25 @@ Don't forget to enable CORS on your index. Make sure to always use a [query key]
 Samples and documentation assume the real estate sample index available through the portal. A demo account is provided for the samples. To create your own service and load the real estate sample [see this guide](https://docs.microsoft.com/en-us/azure/search/search-get-started-portal).
 
 ## Contents
-* [Installation](https://github.com/EvanBoyle/AzSearch.js#installation)
-    * [CDN](https://github.com/EvanBoyle/AzSearch.js#cdn)
-    * [NPM](https://github.com/EvanBoyle/AzSearch.js#npm)
-* [Automagic](https://github.com/EvanBoyle/AzSearch.js#automagic)
-    * [Basic usage](https://github.com/EvanBoyle/AzSearch.js#basic-usage)
-    * [constructor](https://github.com/EvanBoyle/AzSearch.js#constructor)
-    * [addSearchBox](https://github.com/EvanBoyle/AzSearch.js#addsearchbox)
-    * [addResults](https://github.com/EvanBoyle/AzSearch.js#addresults)
-    * [addLoadingIndicator](https://github.com/EvanBoyle/AzSearch.js#addLoadingIndicator)
-    * [addPager](https://github.com/EvanBoyle/AzSearch.js#addpager)
-    * [addRangeFacet](https://github.com/EvanBoyle/AzSearch.js#addrangefacet)
-    * [addCheckboxFacet](https://github.com/EvanBoyle/AzSearch.js#addcheckboxfacet)
-    * [addClearFiltersButton](https://github.com/EvanBoyle/AzSearch.js#addClearFiltersButton)
-    * [addSortBy](https://github.com/EvanBoyle/AzSearch.js#addSortBy)
-    * [addStaticFilter](https://github.com/EvanBoyle/AzSearch.js#addStaticFilter)
-    * [store](https://github.com/EvanBoyle/AzSearch.js#store)
-    * [Custom CSS](https://github.com/EvanBoyle/AzSearch.js#custom-css)
-* [Components & Containers](https://github.com/EvanBoyle/AzSearch.js#components--containers)
-* [Development](https://github.com/EvanBoyle/AzSearch.js#development)
+* [Installation](https://github.com/Azure-Samples/AzSearch.js#installation)
+    * [CDN](https://github.com/Azure-Samples/AzSearch.js#cdn)
+    * [NPM](https://github.com/Azure-Samples/AzSearch.js#npm)
+* [Automagic](https://github.com/Azure-Samples/AzSearch.js#automagic)
+    * [Basic usage](https://github.com/Azure-Samples/AzSearch.js#basic-usage)
+    * [constructor](https://github.com/Azure-Samples/AzSearch.js#constructor)
+    * [addSearchBox](https://github.com/Azure-Samples/AzSearch.js#addsearchbox)
+    * [addResults](https://github.com/Azure-Samples/AzSearch.js#addresults)
+    * [addLoadingIndicator](https://github.com/Azure-Samples/AzSearch.js#addLoadingIndicator)
+    * [addPager](https://github.com/Azure-Samples/AzSearch.js#addpager)
+    * [addRangeFacet](https://github.com/Azure-Samples/AzSearch.js#addrangefacet)
+    * [addCheckboxFacet](https://github.com/Azure-Samples/AzSearch.js#addcheckboxfacet)
+    * [addClearFiltersButton](https://github.com/Azure-Samples/AzSearch.js#addClearFiltersButton)
+    * [addSortBy](https://github.com/Azure-Samples/AzSearch.js#addSortBy)
+    * [addStaticFilter](https://github.com/Azure-Samples/AzSearch.js#addStaticFilter)
+    * [store](https://github.com/Azure-Samples/AzSearch.js#store)
+    * [Custom CSS](https://github.com/Azure-Samples/AzSearch.js#custom-css)
+* [Components & Containers](https://github.com/Azure-Samples/AzSearch.js#components--containers)
+* [Development](https://github.com/Azure-Samples/AzSearch.js#development)
 
 ## Installation
 
@@ -69,18 +69,18 @@ npm install azsearch.js --save
 
 ## Automagic
 
-Automagic provides a set of simple APIs to generate a sample search UI. Automagic is a wrapper of [AzSearchStore](https://github.com/EvanBoyle/AzSearchStore) (for state management) and the sample react components in this repo. 
+Automagic provides a set of simple APIs to generate a sample search UI. Automagic is a wrapper of [AzSearchStore](https://github.com/Azure-Samples/AzSearchStore) (for state management) and the sample react components in this repo.
 
 ### Basic usage
 
 ```js
     // Initialize
-    var automagic = new AzSearch.Automagic({ 
-        index: "realestate-us-sample", 
-        queryKey: "D1CD08C7AC6A1886024E0F23B1824417", 
+    var automagic = new AzSearch.Automagic({
+        index: "realestate-us-sample",
+        queryKey: "D1CD08C7AC6A1886024E0F23B1824417",
         service: "azs-playground" });
 
-    // Add a search box on id #seachBox that uses suggester "sg", grabbing some additional 
+    // Add a search box on id #seachBox that uses suggester "sg", grabbing some additional
     // fields to display during suggestions.
     automagic.addSearchBox("searchBox",
         {
@@ -113,9 +113,9 @@ Sets basic configuration to connect to service. Expects an object of type Config
 ```js
     // constructs and instance of Automagic
     // will also create an instance of AzSearchStore that connects to your service
-    var automagic = new AzSearch.Automagic({ 
-        index: "realestate-us-sample", 
-        queryKey: "D1CD08C7AC6A1886024E0F23B1824417", 
+    var automagic = new AzSearch.Automagic({
+        index: "realestate-us-sample",
+        queryKey: "D1CD08C7AC6A1886024E0F23B1824417",
         service: "azs-playground" });
 ```
 
@@ -136,8 +136,8 @@ Sets basic configuration to connect to service. Expects an object of type Config
 ### addSearchBox
 * ```addSearchBox(htmlId, suggestionsParametersUpdate?, suggestionValueKey?, suggestionTemplate?, css?)```
 
-Adds an input field capable of suggestions/autocomplete and executing search requests. Attaches on the specified htmlID. Optionally takes SuggestionUpdateParameters (from AzSearchStore), an optional key indicating which suggestion value should be set when a suggestion is clicked (defaults to "@search.text"), a [mustache template](https://mustache.github.io/mustache.5.html) to customize rendering, or css overrides. When template is not specified, a json representation of the suggestions is displayed. When specified, the mustache template is rendered against east suggestion. The content of each  suggestion can be customized by adding fields via the select parameter as shown in the example below, or by setting a 
-[suggestions processor](https://github.com/EvanBoyle/AzSearchStore#client-side-results-processing) on the store.
+Adds an input field capable of suggestions/autocomplete and executing search requests. Attaches on the specified htmlID. Optionally takes SuggestionUpdateParameters (from AzSearchStore), an optional key indicating which suggestion value should be set when a suggestion is clicked (defaults to "@search.text"), a [mustache template](https://mustache.github.io/mustache.5.html) to customize rendering, or css overrides. When template is not specified, a json representation of the suggestions is displayed. When specified, the mustache template is rendered against east suggestion. The content of each  suggestion can be customized by adding fields via the select parameter as shown in the example below, or by setting a
+[suggestions processor](https://github.com/Azure-Samples/AzSearchStore#client-side-results-processing) on the store.
 ```js
     // css class overrides
     var css = {
@@ -145,7 +145,7 @@ Adds an input field capable of suggestions/autocomplete and executing search req
     };
     // mustache template for custom suggestion rendering. Default displays formatted JSON
     var suggestionsTemplate = "{{displayText}} <br/> {{{searchText}}}";
-    // Add a search box that uses suggester "sg", grabbing some additional fields to 
+    // Add a search box that uses suggester "sg", grabbing some additional fields to
     // display during suggestions. Use the template defined above
     automagic.addSearchBox("searchBox",
         {
@@ -161,7 +161,7 @@ Adds an input field capable of suggestions/autocomplete and executing search req
     // Set a processor to format suggestions for display
     var suggestionsProcessor = function(results) {
         return results.map(function(result){
-            result.displayText = result.number + " " + 
+            result.displayText = result.number + " " +
                 result.street+ " " +result.city+ ", " +result.region+ " " +
                 result.countryCode;
             result.searchText = result["@search.text"];
@@ -191,8 +191,8 @@ Adds an input field capable of suggestions/autocomplete and executing search req
 ### addResults
 * ```addResults(htmlId, searchParametersUpdate?, resultsTemplate?, css?)```
 
-Adds a view the search results on the specifed htmlId. Optionally takes searchParametersUpdate (from AzSearchStore), a mustache template used to format individual results, or css class overrides. When specified, the mustace template will be rendered against each individual search result. Otherwise formatted JSON will be displayed. The content of each search result can be customized by setting a 
-[results processor](https://github.com/EvanBoyle/AzSearchStore#client-side-results-processing) on the store.
+Adds a view the search results on the specifed htmlId. Optionally takes searchParametersUpdate (from AzSearchStore), a mustache template used to format individual results, or css class overrides. When specified, the mustace template will be rendered against each individual search result. Otherwise formatted JSON will be displayed. The content of each search result can be customized by setting a
+[results processor](https://github.com/Azure-Samples/AzSearchStore#client-side-results-processing) on the store.
 ```js
     var resultTemplate =
         `<div class="col-xs-12 col-sm-5 col-md-3 result_img">
@@ -264,7 +264,7 @@ Adds a pagination control ```<<< 1 2 3 ... >>> ``` on the specified id after all
 ```
 ### addRangeFacet
 * ```addRangeFacet(htmlId, fieldName, dataType, min, max, css?) ```
-    Adds a range facet control for on the specified htmlId for the given fieldName. dataType can be either "number" or "date". Range will go from min to max. Type of min and max should correspond to specified dataType. 
+    Adds a range facet control for on the specified htmlId for the given fieldName. dataType can be either "number" or "date". Range will go from min to max. Type of min and max should correspond to specified dataType.
 
 ```js
     // range facet numeric field sqft
@@ -312,7 +312,7 @@ Adds sorting control to the specified htmlId for the specified sortable fields. 
     var fields = [
         {displayName: "Relevance", fieldName: ""},
         {displayName: "Size", fieldName: "sqft"},
-        {displayName: "Beds", fieldName: "beds"}, 
+        {displayName: "Beds", fieldName: "beds"},
         {displayName: "Baths", fieldName: "baths"},
         // set lat/long to do geo distance ordering
         {displayName: "Distance", fieldName: "location", latitude: 47.673988099999995, longitude: -122.12151199999998}
@@ -324,7 +324,7 @@ Adds sorting control to the specified htmlId for the specified sortable fields. 
 
 * ```addStaticFilter(htmlId, filterKey, filters, defaultFilter, title?, css?)```
 
-Adds a dropdown style filter control with static pre-defined filters. Can be useful for scenarios such as language or geo filtering. You may want to allow user to set a constant filter for language to be english, or for only results within 50 miles to be shown. ```filterKey``` is a unique key that will be used to lookup and set the filter from state within the store ```state.facets.globalFilter[filterKey]```, as it is possible to have multiple global filters. 
+Adds a dropdown style filter control with static pre-defined filters. Can be useful for scenarios such as language or geo filtering. You may want to allow user to set a constant filter for language to be english, or for only results within 50 miles to be shown. ```filterKey``` is a unique key that will be used to lookup and set the filter from state within the store ```state.facets.globalFilter[filterKey]```, as it is possible to have multiple global filters.
 
 ```js
     // static filter for home type
@@ -341,7 +341,7 @@ Adds a dropdown style filter control with static pre-defined filters. Can be use
 ### store
 * ```store```
 
-Instance of [AzSearchStore](https://github.com/EvanBoyle/AzSearchStore). Methods can be called directly on the store, and actions can be dispatched to the store using APIs documented in the [AzSearchStore repo](https://github.com/EvanBoyle/AzSearchStore).
+Instance of [AzSearchStore](https://github.com/Azure-Samples/AzSearchStore). Methods can be called directly on the store, and actions can be dispatched to the store using APIs documented in the [AzSearchStore repo](https://github.com/Azure-Samples/AzSearchStore).
 ```js
     // set api version to preview
     automagic.store.setSearchApiVersion("2015-02-28-Preview");
@@ -359,7 +359,7 @@ Instance of [AzSearchStore](https://github.com/EvanBoyle/AzSearchStore). Methods
 
 ### Custom CSS
 
-If you wish to use a custom theme. Please use the browser tools element inspector ```ctrl shift C```and compare against [css constants used in the project](https://github.com/EvanBoyle/AzSearch.js/blob/master/src/utils/css.ts). Css classes can be overridden in the following manner and passed in to a component:
+If you wish to use a custom theme. Please use the browser tools element inspector ```ctrl shift C```and compare against [css constants used in the project](https://github.com/Azure-Samples/AzSearch.js/blob/master/src/utils/css.ts). Css classes can be overridden in the following manner and passed in to a component:
 
 ```js
 //...
@@ -389,4 +389,4 @@ AzSearch.js is build with react components and react-redux containers. Both of t
 
 ## Development
 
-Set up should be as simple as running ```yarn install```. Run ```yarn run devbuild``` for tslint, typescript compilation, and webpack dev bundling all in one step. Run ```yarn run prodpack``` for a minified bundle. Testing: ```yarn test```
+Set up should be as simple as running ```npm install```. Run ```npm run devbuild``` for tslint, typescript compilation, and webpack dev bundling all in one step. Run ```npm run prodpack``` for a minified bundle. Testing: ```npm test```
