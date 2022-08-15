@@ -1,6 +1,6 @@
 import { connect} from "react-redux";
 import * as React from "react";
-import { Store, searchParameterActions, asyncActions } from "azsearchstore";
+import { Store, searchParameterActions, asyncActions } from "@microsoft/azsearchstore";
 import * as redux from "redux";
 import SortBy from "../components/SortBy";
 
