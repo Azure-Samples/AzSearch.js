@@ -1,6 +1,6 @@
 import { connect } from "react-redux";
 import * as React from "react";
-import { Store, asyncActions, facetsActions, searchParameterActions } from "azsearchstore";
+import { Store, asyncActions, facetsActions, searchParameterActions } from "@microsoft/azsearchstore";
 import * as redux from "redux";
 import ClearFiltersButton from "../components/ClearFiltersButton";
 

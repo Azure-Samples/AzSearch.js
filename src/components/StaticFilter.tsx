@@ -1,7 +1,7 @@
 import * as React from "react";
 import { PropsType } from "../containers/StaticFilterContainer";
 import * as objAssign from "object-assign";
-import { Store } from "azsearchstore";
+import { Store } from "@microsoft/azsearchstore";
 import { defaultCss } from "../utils/css";
 
 export type State = {};

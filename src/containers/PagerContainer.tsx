@@ -1,6 +1,6 @@
 import { connect } from "react-redux";
 import * as React from "react";
-import { Store, asyncActions, searchParameterActions as spActions } from "azsearchstore";
+import { Store, asyncActions, searchParameterActions as spActions } from "@microsoft/azsearchstore";
 import * as redux from "redux";
 import Pager from "../components/Pager";
 

@@ -1,7 +1,7 @@
 import { Template } from "hogan.js";
 import { connect } from "react-redux";
 import * as React from "react";
-import { Store, inputActions, suggestionsActions, asyncActions, facetsActions } from "azsearchstore";
+import { Store, inputActions, suggestionsActions, asyncActions, facetsActions } from "@microsoft/azsearchstore";
 import * as redux from "redux";
 import Results from "../components/Results";
 

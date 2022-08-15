@@ -1,7 +1,7 @@
 import * as React from "react";
 import { PropsType } from "../containers/RangeFacetContainer";
 import * as objAssign from "object-assign";
-import { Store } from "azsearchstore";
+import { Store } from "@microsoft/azsearchstore";
 import { defaultCss } from "../utils/css";
 import { Range } from "rc-slider";
 import * as Numeral from "numeral";
